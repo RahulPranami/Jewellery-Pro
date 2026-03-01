@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+
+/* Layouts */
+@import "./layouts/header.css";
+@import "./layouts/footer.css";
+
+/* WooCommerce */
+@import "./woocommerce/shop.css";
+@import "./woocommerce/product.css";
+@import "./woocommerce/cart.css";
+@import "./woocommerce/checkout.css";
