@@ -173,7 +173,7 @@ body {
 }
 
 
-.archive {
+.archive, .search {
     .site-main {
         .page-header {
             @apply pb-4 border-b border-black/5;
@@ -226,6 +226,44 @@ body {
                 .edit-link {
                     @apply flex items-center;
                 }
+            }
+        }
+    }
+}
+
+
+
+.error-404.not-found {
+    @apply py-20 md:py-32 flex flex-col items-center text-center;
+
+    .page-header {
+        @apply mb-8;
+
+        .page-title {
+            @apply text-5xl md:text-8xl font-bold tracking-tighter;
+        }
+    }
+
+    .page-content {
+        @apply w-full max-w-xl px-6;
+
+        & > p {
+            @apply text-lg md:text-xl opacity-60 mb-12 leading-relaxed;
+        }
+
+        .search-form {
+            @apply flex flex-col sm:flex-row border border-black/10 focus-within:border-black/30 transition-colors bg-white/50;
+
+            label {
+                @apply flex-1;
+
+                .search-field {
+                    @apply w-full bg-transparent px-6 py-4 focus:outline-none;
+                }
+            }
+
+            .search-submit {
+                @apply bg-black text-white px-8 py-4 uppercase text-xs font-bold tracking-widest hover:opacity-90 transition-opacity cursor-pointer;
             }
         }
     }

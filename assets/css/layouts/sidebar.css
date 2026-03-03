@@ -1,90 +1,51 @@
 #secondary.widget-area {
-    padding: 2rem;
-    background-color: #fff;
+    @apply p-8 bg-white;
 }
 
 .widget {
-    margin-bottom: 2.5rem;
+    @apply mb-10;
 }
 
 .widget .wp-block-heading {
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    border-bottom: 2px solid #f0f0f0;
-    color: #1a1a1a;
+    @apply font-bold uppercase tracking-wider border-b-2 border-[#f0f0f0] text-[#1a1a1a];
 }
 
 /* Lists Styling */
-.widget ul, 
+.widget ul,
 .widget ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    @apply list-none p-0 m-0;
 }
 
 .widget li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #f7f7f7;
-}
-
-.widget li:last-child {
-    border-bottom: none;
+    @apply py-1 border-b border-[#f7f7f7] last:border-b-0;
 }
 
 .widget li a {
-    color: #444;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.widget li a:hover {
-    color: #d4af37; /* Gold accent for jewellery theme */
+    @apply text-[#444] no-underline transition-colors duration-200 ease-in-out hover:text-[#d4af37];
 }
 
 /* Search Block */
 .wp-block-search .wp-block-search__label {
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    display: block;
+    @apply font-semibold mb-2 block;
 }
 
 .wp-block-search__inside-wrapper {
-    display: flex;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    overflow: hidden;
+    @apply flex border border-[#ddd] rounded-sm overflow-hidden;
 }
 
 .wp-block-search__input {
-    border: none;
-    padding: 0.75rem;
-    flex-grow: 1;
-    outline: none;
+    @apply border-none p-3 flex-grow outline-none;
 }
 
 .wp-block-search__button {
-    background: #1a1a1a;
-    color: #fff;
-    border: none;
-    padding: 0 1.25rem;
-    cursor: pointer;
-    font-weight: 500;
-    transition: background 0.2s;
-}
-
-.wp-block-search__button:hover {
-    background: #333;
+    @apply bg-[#1a1a1a] text-white border-none px-5 cursor-pointer font-medium transition-colors duration-200 hover:bg-[#333];
 }
 
 /* Latest Comments */
 .wp-block-latest-comments__comment-meta {
-    font-size: 0.85rem;
-    color: #777;
-    line-height: 1.4;
+    @apply text-[0.85rem] text-[#777] leading-[1.4];
 }
 
 .wp-block-latest-comments__comment-author {
-    font-weight: 600;
-    color: #1a1a1a;
+    @apply font-semibold text-[#1a1a1a];
 }
