@@ -7,7 +7,7 @@
  * @package Jewellery_Pro
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'sidebar-1' ) || is_woocommerce() || is_shop() || is_product_taxonomy() || is_product() || is_account_page() || is_cart() || is_checkout() ) {
 	return;
 }
 ?>
