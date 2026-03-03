@@ -1,0 +1,90 @@
+#secondary.widget-area {
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.widget {
+    margin-bottom: 2.5rem;
+}
+
+.widget .wp-block-heading {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #f0f0f0;
+    color: #1a1a1a;
+}
+
+/* Lists Styling */
+.widget ul, 
+.widget ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.widget li:last-child {
+    border-bottom: none;
+}
+
+.widget li a {
+    color: #444;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.widget li a:hover {
+    color: #d4af37; /* Gold accent for jewellery theme */
+}
+
+/* Search Block */
+.wp-block-search .wp-block-search__label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.wp-block-search__inside-wrapper {
+    display: flex;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.wp-block-search__input {
+    border: none;
+    padding: 0.75rem;
+    flex-grow: 1;
+    outline: none;
+}
+
+.wp-block-search__button {
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    padding: 0 1.25rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+}
+
+.wp-block-search__button:hover {
+    background: #333;
+}
+
+/* Latest Comments */
+.wp-block-latest-comments__comment-meta {
+    font-size: 0.85rem;
+    color: #777;
+    line-height: 1.4;
+}
+
+.wp-block-latest-comments__comment-author {
+    font-weight: 600;
+    color: #1a1a1a;
+}

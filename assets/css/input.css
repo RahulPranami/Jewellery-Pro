@@ -1,9 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;family=Playfair+Display:wght@400;600;700&amp;display=swap');
+
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* =========================
+   Design Tokens
+   ========================= */
+@theme {
+    /* Colors */
+    --font-primary: "Cinzel", serif;
+
+    --color-primary: #c8a328;
+    --color-background-light: #faf9f7;
+    --color-background-dark: #1a1a1a;
+    --color-text-main: #1a1a1a;
+    --color-text-light: #f4f3f1;
+    /* Fonts */
+    --font-sans: "Manrope", sans-serif;
+    --font-serif: "Playfair Display", serif;
+
+    /* Border radius */
+    --radius: 0.25rem;
+    --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
+    --radius-2xl: 1rem;
+    --radius-full: 9999px;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+    font-family: 'Manrope', sans-serif;
+}
+
 
 
 /* Layouts */
 @import "./layouts/header.css";
 @import "./layouts/footer.css";
+@import "./layouts/sidebar.css";
+@import "./layouts/layout.css";
 
 /* WooCommerce */
 @import "./woocommerce/shop.css";

@@ -1,0 +1,25 @@
+footer.site-footer {
+    @apply bg-white border-t border-[#e5e5e5] pt-16 pb-8 px-6 md:px-12 lg:px-20;
+
+    .site-info {
+        @apply text-center;
+    }
+
+    .menu {
+        @apply flex flex-col gap-2 text-sm text-gray-500;
+
+        a {
+            @apply hover:text-primary transition-colors;
+        }
+
+        .current-menu-item {
+            a {
+                @apply text-primary;
+            }
+        }
+    }
+
+    .legal-links ul {
+        @apply flex flex-row gap-4;
+    }
+}

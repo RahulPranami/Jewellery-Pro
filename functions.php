@@ -49,7 +49,10 @@ function jewellery_pro_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'jewellery-pro' ),
+			'primary' => esc_html__( 'Primary', 'jewellery-pro' ),
+			'footer-shop' => esc_html__( 'Footer Shop', 'jewellery-pro' ),
+			'footer-support' => esc_html__( 'Footer Support', 'jewellery-pro' ),
+			'footer-legal' => esc_html__( 'Footer Legal', 'jewellery-pro' ),
 		)
 	);
 
